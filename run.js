@@ -3,7 +3,7 @@ console.time("script");
 
 // I decided to use arrays to represent both devices and networks
 // For devices the syntax is [z, y].
-// Networks use the same syntax but the 3rd value in networks is for reach [x, y, reach].
+// Networks use the same syntax, but the 3rd value in networks is for reach [x, y, reach].
 
 const networks = [[0, 0, 9], [20, 20, 6], [10, 0, 12], [5, 5, 13], [99, 25, 2]];
 const devices = [[0, 0], [100, 100], [15, 10], [18, 18], [13, 13], [25, 99]];
@@ -21,7 +21,7 @@ let results = [];
 
 devices.forEach( device => {
 	let res = [0];
-	networks.forEach ( (network, index) => {
+	networks.forEach ( (network, i) => {
 		// Calculating distance
 		let x = Math.abs(device[0] - network[0]);
 		let y = Math.abs(device[1] - network[1]);
@@ -30,7 +30,7 @@ devices.forEach( device => {
 		if (d <= network[2]) {
 			// Calculating connection speed
 			let s = (network[2] - d) ** 2;
-			if (res[0] < s) res = [s, index];
+			if (res[0] < s) res = [s, i];
 		}
 	})
 	results.push(res);
