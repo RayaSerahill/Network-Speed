@@ -13,7 +13,7 @@ anything besides pure JavaScript; Anything else would've been fancy bloat. So
 I ended up making the entire thing without using any 3rd party libraries
 
 ## Usage
-I decided not to include any command line arguments as I thought **using** command line
+For the main script I decided not to include any command line arguments as I thought **using** command line
 arguments would ultimately be harder than editing the hard values at the top of the file.
 
 The code can be executed by node with:
@@ -22,4 +22,5 @@ node run.js
 ```
 Alternatively -- due to the code being pure JavaScript -- you can also
 copy & paste the entire code into web console (or anything
-else that runs JavaScript) and it will work
+else that runs JavaScript) and it will work. For example, I deployed github pages for
+visualizing this code, [Try it out!](https://rayaserahill.github.io/Network-Speed/)
