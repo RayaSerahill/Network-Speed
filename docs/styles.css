@@ -1,0 +1,43 @@
+
+body {
+    margin:0;
+    padding:0;
+}
+
+canvas {
+    position: fixed;
+    top:0;
+    left:0;
+    border: 1px black solid;
+    width: 902px;
+    height: 902px;
+    pointer-events:none;
+}
+
+table {
+    width: 902px;
+    height: 902px;
+    border-collapse:collapse;
+    border:1px solid lightgrey;
+}
+
+table td{
+    border:1px solid lightgrey;
+}
+
+div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 500px;
+    background-color: #41b883;
+}
+
+.device {
+    background-color: red;
+}
+
+.network {
+    background-color: blue;
+}

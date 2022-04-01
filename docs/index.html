@@ -1,0 +1,21 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./styles.css">
+
+
+<canvas id="myCanvas" width="902" height="902"></canvas>
+<table id="grid"></table>
+<div>
+    Number of devices to add <input type="number" id="devices" name="devices" value="200" min="1" max="10000"><br>
+    Number of networks to add <input type="number" id="networks" name="networks" value="100" min="1" max="10000"><br>
+    <button onclick="calc()">Calculate</button>
+    <p>1. Enter the amount of devices/networks you want</p>
+    <p>2. Press 'calculate'</p>
+    <p>3. Press on any device (red) square to see their<br>best network</p>
+    <p>4. Press on any network (blue) square to see their range</p><br><br>
+    <p>This site was made in a hurry and for fun. <br>
+    I made no effort to cleanup the code on this website.<br>
+    This website is meant to be simply a visualization<br>
+    Please use the main script (run.js) on the github page instead</p>
+</div>
+
+<script src="./scripts.js"></script>
